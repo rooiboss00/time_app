@@ -8,6 +8,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.7'
+gem 'bcrypt',         '3.1.12'#has_secure_passwordを使ってパスワードをハッシュ化する！
 
 gem 'bootstrap-sass', '3.3.7'
 # Use sqlite3 as the database for Active Record
