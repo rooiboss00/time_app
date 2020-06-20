@@ -11,7 +11,13 @@ gem 'rails', '~> 5.1.7'
 
 gem 'bootstrap-sass', '3.3.7'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4', '>= 1.4.2'
+#gem 'sqlite3', :group => [:development, :test]
+#gem 'pg', :group => :production
+
+gem 'sqlite3', groups: %w(test development), require: false
+
+gem 'pg', groups: %w(production), require: false
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -52,13 +58,9 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-  # 本番環境ではPostgresqlを使う
-  group :production do
-    gem 'sqlite3', '~> 1.4', '>= 1.4.2'
 
-    #gem 'pg', '0.20.0'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-  end
