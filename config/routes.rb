@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  root 'begin_pages#home'
+
+  get 'begin_pages/home'
+
+  get 'begin_pages/help'
+
+  get 'begin_pages/about'
+
 end
