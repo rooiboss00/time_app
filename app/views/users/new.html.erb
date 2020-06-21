@@ -1,3 +1,24 @@
-<% provide(:title, '新規登録') %>
-<h1>新規登録</h1>
-<p>新規登録はこちらから！</p>
+<% provide(:title, '新規登録はこちら') %>
+    <h1>新規登録はこちら</h1>
+
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <%= form_for(@user) do |f| %>
+          <%= render 'shared/error_messages' %>
+
+          <%= f.label :名前 %>
+          <%= f.text_field :name, class: 'form-control' %>
+
+          <%= f.label :メールアドレス %>
+          <%= f.email_field :email, class: 'form-control' %>
+
+          <%= f.label :パスワード %>
+          <%= f.password_field :password, class: 'form-control' %>
+
+          <%= f.label :パスワード再入力, "Confirmation" %>
+          <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+          <%= f.submit "アカウント登録！", class: "btn-gradient-3d-orange" %>
+        <% end %>
+      </div>
+    </div>
