@@ -1,0 +1,21 @@
+<% provide(:title, "Log in") %>
+<h1>ログインページ</h1>
+
+<div class="container">
+  <div class="col-md-6 col-md-offset-3">
+    <p>新しく登録したい方はこちら👇</p>
+    <p><%= link_to "新規登録ページ", signup_path %></p>
+
+    <%= form_for(:session, url: login_path) do |f| %>
+
+      <%= f.label :名前 %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.label :パスワード %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.submit "ログインする！", class: "btn-gradient-3d-orange" %>
+    <% end %>
+
+  </div>
+</div>

@@ -1,7 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-$gray-medium-light: #eaeaea;
+$gray-medium-light: #ee9243;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -12,8 +12,10 @@ body {
   padding-top: 60px;
   padding-top: 70px;
   margin-top: 70px;
-
+  font-family: serif;
+  color: #FFC107;
 }
+
 
 section {
   overflow: auto;
@@ -21,6 +23,7 @@ section {
 
 textarea {
   resize: vertical;
+  color: darksalmon;
 
 }
 
@@ -39,13 +42,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-.h1 {
-  color: darkorchid;
+h1 {
+  font-color: orange;
   font-size: 4em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
-  border: 5px solid green;
+  //border: 5px solid green;
+  font-family: serif;
 
 }
 
@@ -56,11 +60,13 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: goldenrod;
+  font-family: serif;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  font-family: serif;
 }
 
 /* header */
@@ -70,16 +76,37 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: plum;
+  color: orange;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  font-family: serif;
 }
 
 #logo:hover {
-  color: gold;
+  color: white;
   text-decoration: none;
+}
+
+
+#home-logo:hover{
+  color: #FFC107;
+  text-decoration: none;
+}
+
+#help-logo:hover{
+  color: plum;
+  text-decoration: none;
+}
+
+login-logo{
+  color: #FFC107;
+  text-decoration: none;
+}
+
+header{
+  color: #CCCCCC;
 }
 
 /* footer */
@@ -160,10 +187,12 @@ input, textarea, select, .uneditable-input {
   width: 100%;
   margin-bottom: 30px;
   @include box_sizing;
+  font-family: serif;
 }
 
 input {
   height: available !important;
+
 }
 
 /*新規登録ボタン*/
@@ -189,5 +218,19 @@ input {
 
 h1{
   text-align:center;
+  color: #FFC107;
+  font-family: serif;
 }
 
+body {
+  background: url(the-night-sky-4051288_1920.jpg) no-repeat center center fixed #C0C0C0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+//ログインページ
+body{
+  text-align:center;
+}
