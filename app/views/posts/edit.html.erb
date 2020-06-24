@@ -1,0 +1,10 @@
+<h1>タスク編集</h1>
+<%= form_for(@post) do |f| %>
+  <div><%= f.label :タイトル %></div>
+  <div><%= f.text_field :title %></div>
+  <div><%= f.label :内容 %></div>
+  <div><%= f.text_field :content %></div>
+  <%= f.submit "新しく更新する", class: "btn-gradient-3d-orange" %>
+
+<% end %>
+<%= link_to '戻る', posts_path %>

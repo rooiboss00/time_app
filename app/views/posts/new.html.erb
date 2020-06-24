@@ -1,0 +1,16 @@
+<h1>新規作成</h1>
+<%= form_for(@post) do |f| %>
+  <div class="field">
+     <%= f.label :タイトル %><br>
+     <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :内容 %><br>
+    <%= f.text_field :content %>
+  </div>
+  <div class="actions">
+    <%= f.submit "新しく作る！", class: "btn-gradient-3d-orange" %>
+  </div>
+<% end %>
+
+<%= link_to '戻る', posts_path %>

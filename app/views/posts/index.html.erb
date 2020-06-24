@@ -1,0 +1,25 @@
+<h1>管理一覧</h1>
+<table align="center" width="60%">
+<thead>
+<tr>
+  <th>タイトル</th>
+  <th>内容</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+      <% @posts.each do |post| %>
+        <td><%= post.title %></td>
+        <td><%= post.content %></td>
+        <td><%= link_to '編集する', edit_post_path(post) ,class: "btn-gradient-radius"%></td>
+        <td><%= link_to '消す', post_path(post), method: :delete ,class: "btn-gradient-radius"%></td>
+    </tr>
+    <% end %>
+</tbody>
+</table>
+
+
+<div>
+<%= link_to '新しく作る！', new_post_path ,class: "btn-gradient-radius"%>
+<p><%= link_to '戻る',root_path%></p>
+</div>

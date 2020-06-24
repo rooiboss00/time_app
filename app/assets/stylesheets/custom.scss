@@ -13,7 +13,7 @@ body {
   padding-top: 70px;
   margin-top: 70px;
   font-family: serif;
-  color: #FFC107;
+  //color: white;
 }
 
 
@@ -27,12 +27,12 @@ textarea {
 
 }
 
-.center {
-  text-align: center;
-}
+
+
 
 .center h1 {
   margin-bottom: 10px;
+  color: #FFC107;
 }
 
 
@@ -63,13 +63,21 @@ h2 {
   font-family: serif;
 }
 
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
   font-family: serif;
 }
 
-/* header */
+th{
+  text-align: center;
+}
+
+.container {
+  //color: #FFFFFF;
+  text-align: center;
+}
 /* header */
 
 #logo {
@@ -141,7 +149,7 @@ footer {
   width: 100%;
   margin-top: 50px;
   @include box_sizing;
- }
+}
 
 /* sidebar */
 
@@ -192,7 +200,6 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: available !important;
-
 }
 
 /*新規登録ボタン*/
@@ -206,7 +213,7 @@ input {
   background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
   border-bottom: solid 3px #c58668;
-  text-align:center;
+  //text-align:center;
 }
 
 .btn-gradient-3d-orange:active {
@@ -215,6 +222,42 @@ input {
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
   border-bottom: none;
 }
+
+//編集と削除ボタン
+.btn-gradient-radius {
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  transition: .4s;
+}
+
+.btn-gradient-radius:hover {
+  background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+//ボタン投稿一覧
+.btn-circle-border-double {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 50px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: double 4px #FFFFFF;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.btn-circle-border-double:hover {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
 
 h1{
   text-align:center;
@@ -234,3 +277,39 @@ body {
 body{
   text-align:center;
 }
+
+.btn-circle-border-double {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: double 4px #FFFFFF;
+  overflow: hidden;
+  transition: .6s;
+  //text-align: center;
+}
+
+.btn-circle-border-double:hover {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+//編集と削除のボタン
+
+.btn-gradient-radius {
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  transition: .4s;
+}
+
+.btn-gradient-radius:hover {
+  background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+

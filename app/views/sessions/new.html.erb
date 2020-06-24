@@ -8,7 +8,7 @@
 
     <%= form_for(:session, url: login_path) do |f| %>
 
-      <%= f.label :名前 %>
+      <%= f.label :メールアドレス %>
       <%= f.email_field :email, class: 'form-control' %>
 
       <%= f.label :パスワード %>
@@ -16,6 +16,5 @@
 
       <%= f.submit "ログインする！", class: "btn-gradient-3d-orange" %>
     <% end %>
-
   </div>
 </div>

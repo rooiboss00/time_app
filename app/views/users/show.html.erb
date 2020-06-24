@@ -6,6 +6,9 @@
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
+      <div>
+        <p><%= link_to '新しく作る！', posts_path ,class: "btn-circle-border-double"%></p>
+      </div>
     </section>
   </aside>
 </div>
